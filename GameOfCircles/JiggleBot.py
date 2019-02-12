@@ -10,6 +10,7 @@ class JiggleBot:
         self.team = team
         
     def move(self):
+        self.speed += 0.01
         self.x += random(-self.speed, self.speed)
         self.y += random(-self.speed, self.speed)
         self.x = constrain(self.x, 0, width)
