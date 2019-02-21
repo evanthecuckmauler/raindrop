@@ -8,7 +8,7 @@ class Player:
     right = False
     up = False
     down = False
-    speed = 5
+    speed = 8
     diameter = 50
     c = color(255,0,0)
     
