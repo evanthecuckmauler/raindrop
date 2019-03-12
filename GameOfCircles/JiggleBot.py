@@ -1,4 +1,8 @@
-class JiggleBot:
+import SpriteManager 
+from Sprite import Sprite
+from Bullet import Bullet
+
+class JiggleBot(Sprite):
     
     speed = 8
     diameter = 50

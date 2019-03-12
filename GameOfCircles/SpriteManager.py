@@ -13,7 +13,7 @@ def getPlayer():
     global player
     return player
 
-def destroyed(target):
+def destroy(target):
     destroyed.append(target)
     
 def spawn(obj):
