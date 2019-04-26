@@ -1,17 +1,17 @@
 from Armored import Armored
 from Sprite import Sprite
-from Bullet import Bullet
+from Splitter import Splitter
 from Player import Player
 
 import SpriteManager
 
-class Enemy(Armored, Sprite):
+class Minigun(Armored, Sprite):
     armor = 5
     speed = 8
-    diameter = 50
-    c = color(0, 0, 255)
+    diameter = 100
+    c = color(255, 0, 255)
     mark = 0
-    wait = 1000
+    wait = 500
     go = True
 
 
@@ -38,4 +38,4 @@ class Enemy(Armored, Sprite):
             
         if(self.go):
             self.go = False
-            SpriteManager.spawn(Bullet(self.x, self.y, vector, self.team))
+            SpriteManager.spawn(Splitter(self.x, self.y, vector, self.team, 10))

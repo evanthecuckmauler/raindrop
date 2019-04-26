@@ -1,9 +1,11 @@
 import SpriteManager 
+from Armored import Armored
 from Sprite import Sprite
 from Bullet import Bullet
 
-class JiggleBot(Sprite):
+class JiggleBot(Armored, Sprite):
     
+    armor = 4
     speed = 8
     diameter = 50
     c = color(255,255,0)

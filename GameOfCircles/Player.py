@@ -1,11 +1,10 @@
 import SpriteManager 
-
 from Sprite import Sprite
 from Bullet import Bullet
-
+from Armored import Armored
 class Player(Sprite):
     
-    # instance variables
+    
     left = False
     right = False
     up = False
@@ -13,6 +12,7 @@ class Player(Sprite):
     speed = 8
     diameter = 50
     c = color(255,0,0)
+  #  self.primaryWeapon
     
     # constru
     # instance methods
